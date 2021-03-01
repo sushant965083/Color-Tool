@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Color Tool</title>
+        <link rel="stylesheet" href="index.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">Lighten/Darken Color</h1>
+            <label for="color-input">Color (Hex)</label>
+            <input type="text" name="color-input" id="color-input" placeholder="#000000">
+
+            <label for="color-slider">0%</label>
+            <input type="range" name="color-slider" id="color-slider" min='0' max="100" value="0"/>
+
+            <p class="input-color">Input Color</p>
+            <div class="color-box" id="input-color-box"></div>
+
+            <p class="altered-color">Altered Color</p>
+            <div class="color-box" id="altered-color-box"></div>
+
+            <style src="index.js"></style>
+
+
+        </div>    
+    </body>
+</html>
