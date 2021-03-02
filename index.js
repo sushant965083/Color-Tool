@@ -4,11 +4,12 @@ const colorInput = document.getElementById('color-input');
 const InputColorBox = document.getElementById('input-color-box');
 
 colorInput.addEventListener('keyup', () => {
-    if (!validHexOrNot(colorInput.value)) {
+    const hex = colorInput.value;
+    if (!validHexOrNot(hex)) {
         return;
     }
         
-    InputColorBox.style.backgroundColor = colorInput.value;
+    InputColorBox.style.backgroundColor = hex;
     
 })
 
@@ -23,8 +24,8 @@ const validHexOrNot = (hex) => {
     } else {
         return false;
     }
-    
 }
+
 
 
 
